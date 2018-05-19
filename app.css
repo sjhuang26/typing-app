@@ -1,0 +1,71 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.typography {
+	font-family: Arial, sans-serif;
+}
+
+.app {
+	margin: 0;
+	padding: 0;
+}
+
+.navigation {
+	background-color: #EEE;
+}
+
+.button {
+	padding: 5px;
+	margin: 0;
+	background-color: black;
+	color: white;
+	display: inline-block;
+}
+
+.switcher__item {
+	display: none;
+}
+
+.switcher__item--active {
+	display: block;
+}
+
+.typing {
+	background-color: #fdf6e3;
+}
+
+.typing__text {
+	font-size: 120%;
+}
+
+.char--red {
+	color: #dc322f;
+}
+
+.char--blue {
+	color: #268bd2;
+}
+
+.char--active {
+	color: red;
+}
+
+.char--incorrect {
+	background-color: yellow;
+}
+
+.char--correct {
+	color: gray;
+}
+
+.big-textarea {
+	width: 100%;
+	height: 150px;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	border: none;
+	background-color: maroon;
+	resize: none;
+}
