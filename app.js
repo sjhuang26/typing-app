@@ -16,8 +16,8 @@
 	var text = "";
 
 	page.enterListener = v => {
-		$("page__set-text").style.display = (v == "set-text" ? "block" : "none");
-		$("page__type").style.display = (v == "type" ? "block" : "none");
+		$("page__set-text").style.display = (v == "set-text" ? "flex" : "none");
+		$("page__type").style.display = (v == "type" ? "flex" : "none");
 		if (v == "set-text") {
 			$("set-text-input").value = text;
 		}

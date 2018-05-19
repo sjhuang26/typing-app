@@ -3,29 +3,48 @@ body {
 	padding: 0;
 }
 
+.app {
+	background-color: #fdf6e3;
+	cursor: default;
+	user-select: none;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.app__content {
+	flex: 1;
+}
+
 .typography {
 	font-family: Arial, sans-serif;
 }
 
-.app {
-	margin: 0;
-	padding: 0;
-}
-
 .navigation {
-	background-color: #EEE;
+	background-color: #d33682;
+	padding: 0 10px;
 }
 
 .button {
 	padding: 5px;
 	margin: 0;
-	background-color: black;
 	color: white;
 	display: inline-block;
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+
+.button:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.switcher {
+	display: flex;
 }
 
 .switcher__item {
 	display: none;
+	flex: 1;
 }
 
 .switcher__item--active {
@@ -33,7 +52,7 @@ body {
 }
 
 .typing {
-	background-color: #fdf6e3;
+	overflow: auto;
 }
 
 .typing__text {
@@ -48,24 +67,35 @@ body {
 	color: #268bd2;
 }
 
-.char--active {
-	color: red;
-}
-
-.char--incorrect {
-	background-color: yellow;
-}
-
-.char--correct {
-	color: gray;
-}
-
 .big-textarea {
 	width: 100%;
-	height: 150px;
-	padding: 10px 10px;
-	box-sizing: border-box;
+	padding: 10px;
 	border: none;
-	background-color: maroon;
+	outline: none;
 	resize: none;
+	background-color: transparent;
+	font-family: inherit;
+}
+
+.set-text-page {
+	display: flex;
+}
+
+.set-text-page__input {
+	flex: 1;
+}
+
+.type-page {
+	flex-direction: column;
+	align-items: center;
+}
+
+.header {
+	color: white;
+	font-size: 100%;
+	display: inline;
+}
+
+.type-page__input {
+	width: 200px;
 }
